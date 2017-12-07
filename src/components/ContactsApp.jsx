@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
-import Contact from 'Contact';
+import ContactList from './ContactList';
+import './ContactApp.css';
 
 class ContactApp extends Component {
+    
     render() {
-        return <Contact />
+        return <ContactList contacts={this.props.contacts} />
     }
 }
 
